@@ -1,0 +1,44 @@
+{
+    "road_defaults": {
+        "type": 0,
+        "width": 4.0,
+        "texture-offset": {
+            "link": "point2",
+            "segment": -1
+        },
+        "point1":-1
+        "dir1":-1
+        "side1":-1,
+        "transitionR": 2
+        "transitionL": 2
+    },
+    "road": [
+        {
+             "point1": [0.0, 0.0, 0.0],
+             "dir1": [0.0, 1.0, 0.0],
+             "side1":[1.0, 0.0 0.0 ],
+             "point2": [0.0, 150.0, 0.0],
+             "dir2": [0.0, 1.0, 0.0],
+             "side1":[1.0, 0.0 0.0 ]
+        },
+        {
+             "type": 0,
+             "width": 4.0,
+             "texture-offset": 0.1,
+             "point1": [0.0, 150.0, 0.0],
+             "dir1": [0.0, 1.0, 0.0],
+             "side1":[1.0, 0.0 0.0 ],
+             "point2": [0.0, 115.0, 0.0],
+             "dir2": [0.0, 1.0, 0.0],
+             "side1":[1.0, 0.0 0.0 ]
+        },
+    ],
+    "default_ground": {
+        
+    },
+    "ground": [
+        
+    ],
+    "objects": [
+    ]
+}
