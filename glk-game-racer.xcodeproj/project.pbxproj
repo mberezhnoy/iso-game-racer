@@ -20,7 +20,16 @@
 		620B622E19F0F24400D3322C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620B620D19F0F24400D3322C /* Foundation.framework */; };
 		620B622F19F0F24400D3322C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620B621119F0F24400D3322C /* UIKit.framework */; };
 		620B623719F0F24400D3322C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 620B623519F0F24400D3322C /* InfoPlist.strings */; };
-		620B623919F0F24400D3322C /* glk_game_racerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 620B623819F0F24400D3322C /* glk_game_racerTests.m */; };
+		620B624419F0F2C400D3322C /* map1.json in Resources */ = {isa = PBXBuildFile; fileRef = 620B624319F0F2C400D3322C /* map1.json */; };
+		620B624819F1559100D3322C /* PISKGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 620B624719F1559100D3322C /* PISKGame.m */; };
+		620B624D19F176EE00D3322C /* PISKGameQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 620B624C19F176EE00D3322C /* PISKGameQuadTree.m */; };
+		620B625019F1794D00D3322C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620B624E19F1794D00D3322C /* GLKit.framework */; };
+		620B625119F1794D00D3322C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620B624F19F1794D00D3322C /* OpenGLES.framework */; };
+		62779E9019F56A2A00863231 /* PISK__QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 62779E8F19F56A2A00863231 /* PISK__QuadTree.m */; };
+		6292E5EB19F258FB0048BF2E /* PISKGameSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292E5EA19F258FB0048BF2E /* PISKGameSegment.m */; };
+		6292E5F219F265B30048BF2E /* PISKMapCompiller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292E5F119F265B30048BF2E /* PISKMapCompiller.m */; };
+		6292E5F519F2B98C0048BF2E /* PISKMCGroundFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292E5F419F2B98C0048BF2E /* PISKMCGroundFragment.m */; };
+		6292E5F719F50EF10048BF2E /* PISK__GameSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292E5F619F50EF10048BF2E /* PISK__GameSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +61,24 @@
 		620B622C19F0F24400D3322C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		620B623419F0F24400D3322C /* glk-game-racerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glk-game-racerTests-Info.plist"; sourceTree = "<group>"; };
 		620B623619F0F24400D3322C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		620B623819F0F24400D3322C /* glk_game_racerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glk_game_racerTests.m; sourceTree = "<group>"; };
+		620B624319F0F2C400D3322C /* map1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map1.json; sourceTree = "<group>"; };
+		620B624619F1559100D3322C /* PISKGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKGame.h; sourceTree = "<group>"; };
+		620B624719F1559100D3322C /* PISKGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKGame.m; sourceTree = "<group>"; };
+		620B624A19F1768F00D3322C /* GameProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameProtocols.h; sourceTree = "<group>"; };
+		620B624B19F176EE00D3322C /* PISKGameQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKGameQuadTree.h; sourceTree = "<group>"; };
+		620B624C19F176EE00D3322C /* PISKGameQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKGameQuadTree.m; sourceTree = "<group>"; };
+		620B624E19F1794D00D3322C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		620B624F19F1794D00D3322C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		62779E8F19F56A2A00863231 /* PISK__QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISK__QuadTree.m; sourceTree = "<group>"; };
+		6292E5E919F258FB0048BF2E /* PISKGameSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKGameSegment.h; sourceTree = "<group>"; };
+		6292E5EA19F258FB0048BF2E /* PISKGameSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKGameSegment.m; sourceTree = "<group>"; };
+		6292E5EF19F2620C0048BF2E /* GameFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameFunctions.h; sourceTree = "<group>"; };
+		6292E5F019F265B30048BF2E /* PISKMapCompiller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKMapCompiller.h; sourceTree = "<group>"; };
+		6292E5F119F265B30048BF2E /* PISKMapCompiller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKMapCompiller.m; sourceTree = "<group>"; };
+		6292E5F319F2B98C0048BF2E /* PISKMCGroundFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKMCGroundFragment.h; sourceTree = "<group>"; };
+		6292E5F419F2B98C0048BF2E /* PISKMCGroundFragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKMCGroundFragment.m; sourceTree = "<group>"; };
+		6292E5F619F50EF10048BF2E /* PISK__GameSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISK__GameSegment.m; sourceTree = "<group>"; };
+		6292E5F819F5148D0048BF2E /* tests-common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tests-common.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620B625019F1794D00D3322C /* GLKit.framework in Frameworks */,
+				620B625119F1794D00D3322C /* OpenGLES.framework in Frameworks */,
 				620B621019F0F24400D3322C /* CoreGraphics.framework in Frameworks */,
 				620B621219F0F24400D3322C /* UIKit.framework in Frameworks */,
 				620B620E19F0F24400D3322C /* Foundation.framework in Frameworks */,
@@ -101,6 +129,8 @@
 		620B620C19F0F24400D3322C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				620B624E19F1794D00D3322C /* GLKit.framework */,
+				620B624F19F1794D00D3322C /* OpenGLES.framework */,
 				620B620D19F0F24400D3322C /* Foundation.framework */,
 				620B620F19F0F24400D3322C /* CoreGraphics.framework */,
 				620B621119F0F24400D3322C /* UIKit.framework */,
@@ -112,6 +142,9 @@
 		620B621319F0F24400D3322C /* glk-game-racer */ = {
 			isa = PBXGroup;
 			children = (
+				620B624919F172EE00D3322C /* MapCompiller */,
+				620B624519F1556D00D3322C /* Game */,
+				620B624219F0F26500D3322C /* maps */,
 				620B621C19F0F24400D3322C /* PISKAppDelegate.h */,
 				620B621D19F0F24400D3322C /* PISKAppDelegate.m */,
 				620B621F19F0F24400D3322C /* Main.storyboard */,
@@ -137,8 +170,9 @@
 		620B623219F0F24400D3322C /* glk-game-racerTests */ = {
 			isa = PBXGroup;
 			children = (
-				620B623819F0F24400D3322C /* glk_game_racerTests.m */,
 				620B623319F0F24400D3322C /* Supporting Files */,
+				6292E5F619F50EF10048BF2E /* PISK__GameSegment.m */,
+				62779E8F19F56A2A00863231 /* PISK__QuadTree.m */,
 			);
 			path = "glk-game-racerTests";
 			sourceTree = "<group>";
@@ -148,8 +182,43 @@
 			children = (
 				620B623419F0F24400D3322C /* glk-game-racerTests-Info.plist */,
 				620B623519F0F24400D3322C /* InfoPlist.strings */,
+				6292E5F819F5148D0048BF2E /* tests-common.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		620B624219F0F26500D3322C /* maps */ = {
+			isa = PBXGroup;
+			children = (
+				620B624319F0F2C400D3322C /* map1.json */,
+			);
+			name = maps;
+			sourceTree = "<group>";
+		};
+		620B624519F1556D00D3322C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				620B624619F1559100D3322C /* PISKGame.h */,
+				620B624719F1559100D3322C /* PISKGame.m */,
+				620B624A19F1768F00D3322C /* GameProtocols.h */,
+				620B624B19F176EE00D3322C /* PISKGameQuadTree.h */,
+				620B624C19F176EE00D3322C /* PISKGameQuadTree.m */,
+				6292E5E919F258FB0048BF2E /* PISKGameSegment.h */,
+				6292E5EA19F258FB0048BF2E /* PISKGameSegment.m */,
+				6292E5EF19F2620C0048BF2E /* GameFunctions.h */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		620B624919F172EE00D3322C /* MapCompiller */ = {
+			isa = PBXGroup;
+			children = (
+				6292E5F019F265B30048BF2E /* PISKMapCompiller.h */,
+				6292E5F119F265B30048BF2E /* PISKMapCompiller.m */,
+				6292E5F319F2B98C0048BF2E /* PISKMCGroundFragment.h */,
+				6292E5F419F2B98C0048BF2E /* PISKMCGroundFragment.m */,
+			);
+			name = MapCompiller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620B624419F0F2C400D3322C /* map1.json in Resources */,
 				620B622619F0F24400D3322C /* Images.xcassets in Resources */,
 				620B621819F0F24400D3322C /* InfoPlist.strings in Resources */,
 				620B622119F0F24400D3322C /* Main.storyboard in Resources */,
@@ -250,8 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6292E5F219F265B30048BF2E /* PISKMapCompiller.m in Sources */,
 				620B621A19F0F24400D3322C /* main.m in Sources */,
 				620B621E19F0F24400D3322C /* PISKAppDelegate.m in Sources */,
+				6292E5F519F2B98C0048BF2E /* PISKMCGroundFragment.m in Sources */,
+				620B624819F1559100D3322C /* PISKGame.m in Sources */,
+				620B624D19F176EE00D3322C /* PISKGameQuadTree.m in Sources */,
+				6292E5EB19F258FB0048BF2E /* PISKGameSegment.m in Sources */,
 				620B622419F0F24400D3322C /* PISKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +335,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620B623919F0F24400D3322C /* glk_game_racerTests.m in Sources */,
+				6292E5F719F50EF10048BF2E /* PISK__GameSegment.m in Sources */,
+				62779E9019F56A2A00863231 /* PISK__QuadTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +533,7 @@
 				620B623E19F0F24400D3322C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		620B623F19F0F24400D3322C /* Build configuration list for PBXNativeTarget "glk-game-racerTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +542,7 @@
 				620B624119F0F24400D3322C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
