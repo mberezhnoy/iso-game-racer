@@ -21,6 +21,7 @@
 
 - (instancetype) init {
     //TODO: trace error: disable create segment without points
+    NSLog(@"FAIL");
     return nil;
 }
 

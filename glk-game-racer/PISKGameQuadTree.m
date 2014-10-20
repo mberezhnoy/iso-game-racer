@@ -7,6 +7,7 @@
 //
 
 #import "PISKGameQuadTree.h"
+#import "GameFunctions.h"
 
 @implementation PISKGameQuadTree {
     NSMutableSet *childs;
