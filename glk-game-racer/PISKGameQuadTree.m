@@ -16,8 +16,8 @@
 
 @synthesize rect = _rect;
 
-const int PISKGameQuadTree_maxCilds = 4;
-const int PISKGameQuadTree_maxDeep = 30;
+const int PISKGameQuadTree_maxCilds = 15;
+const int PISKGameQuadTree_maxDeep = 20;
 
 - (instancetype) init {
     return [self initWithRect:CGRectMake(0, 0, 100, 100)];
@@ -54,6 +54,10 @@ const int PISKGameQuadTree_maxDeep = 30;
         for (int i=0; i<4; i++) {
             if ( !childsTree[i] ) {
                 childsTree[i] = [[PISKGameQuadTree alloc] initWithRect:childRects[i]];
+                childsTree[i].deep = self.deep+1;
+                for (id<PISKGamePositionable> obj in childs) {
+                    [childsTree[i] insert:obj];
+                }
             }
             [childsTree[i] insert:object];
         }
@@ -72,7 +76,7 @@ const int PISKGameQuadTree_maxDeep = 30;
 
 - (id<PISKGamePositionable>) getOneForPoint:(CGPoint)point {
     id<PISKGamePositionable> object = nil;
-    if ( CGRectContainsPoint(_rect, point) ) {
+    if ( !CGRectContainsPoint(_rect, point) ) {
         return object;
     }
     
@@ -97,7 +101,7 @@ const int PISKGameQuadTree_maxDeep = 30;
 
 - (NSMutableSet*) getAllForPoint:(CGPoint)point {
     NSMutableSet *result = [[NSMutableSet alloc] init];
-    if ( CGRectContainsPoint(_rect, point) ) {
+    if ( !CGRectContainsPoint(_rect, point) ) {
         return result;
     }
     

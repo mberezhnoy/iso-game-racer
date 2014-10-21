@@ -47,12 +47,47 @@
 }
 
 - (void)testByPoint {
+    CGPoint p = CGPointMake(2.2, 2.4);
+    XCTAssertEqualObjects([tree1 getOneForPoint:p], nil);
+    XCTAssertEqualObjects([tree2 getOneForPoint:p], segments[2][2][0]);
+    p = CGPointMake(1.2, 1.4);
+    NSSet *items;
+    items = [tree1 getAllForPoint:p];
+    XCTAssertEqual([items count], 1);
+    XCTAssertTrue([items containsObject:segments[1][1][0] ]);
+    items = [tree2 getAllForPoint:p];
+    XCTAssertEqual([items count], 1);
+    XCTAssertTrue([items containsObject:segments[1][1][0] ]);
 }
 
 - (void)testByRect {
+    NSSet *items = [tree2 getAllInRect:CGRectMake(1.1, 2.1, 4.8, 2.8)];
+    XCTAssertEqual([items count], 30);
+    for (int i=0; i<5; i++){
+        for (int j=0; j<3; j++){
+            XCTAssertTrue([items containsObject:segments[i+1][j+2][0] ], @"i=%d j=%d", i, j);
+            XCTAssertTrue([items containsObject:segments[i+1][j+2][0] ], @"i=%d j=%d", i, j);
+        }
+    }
 }
 
 - (void)testByLine {
+    NSSet *items = [tree2 getAllOnLineFrom:CGPointMake(2.9, 2.8) To:CGPointMake(1.2, 3.1)];
+    XCTAssertEqual([items count], 5);
+    XCTAssertTrue([items containsObject:segments[1][3][1] ]);
+    XCTAssertTrue([items containsObject:segments[1][2][1] ]);
+    XCTAssertTrue([items containsObject:segments[1][2][0] ]);
+    XCTAssertTrue([items containsObject:segments[2][2][1] ]);
+    XCTAssertTrue([items containsObject:segments[2][2][0] ]);
 }
 
+- (void)testRemove {
+    CGPoint p = CGPointMake(2.2, 2.4);
+    PISKGameSegment *item = [tree2 getOneForPoint:p];
+    XCTAssertEqualObjects(item, segments[2][2][0]);
+    [tree2 remove:item];
+    XCTAssertEqualObjects([tree2 getOneForPoint:p], nil);
+    [tree2 insert:item];
+    XCTAssertEqualObjects([tree2 getOneForPoint:p], item);
+}
 @end

@@ -20,5 +20,6 @@
 - (id<PISKGamePositionable>) getOneForPoint:(CGPoint)point;
 - (NSMutableSet*) getAllForPoint:(CGPoint)point;
 - (NSMutableSet*) getAllInRect:(CGRect)rect;
+- (NSMutableSet*) getAllOnLineFrom:(CGPoint)p1 To:(CGPoint)p2;
 
 @end
