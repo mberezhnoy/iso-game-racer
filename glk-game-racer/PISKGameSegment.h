@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "GameProtocols.h"
 
-static const size_t PISKGameSegmentInfoMaxIndex = 6;
+static const size_t PISKGameSegmentInfoMaxIndex = 8;
 
 typedef enum {
     PISKGameSegmentInfoZPosition = 0,
@@ -17,7 +17,9 @@ typedef enum {
     PISKGameSegmentInfoNormalY = 2,
     PISKGameSegmentInfoNormalZ = 3,
     PISKGameSegmentInfoTextureX = 4,
-    PISKGameSegmentInfoTextureY = 5,    
+    PISKGameSegmentInfoTextureY = 5,
+    PISKGameSegmentInfoMaxSpeedFactor = 6,
+    PISKGameSegmentInfoMaxAccelerationFactor = 7,
 } PISKGameSegmentInfo;
 
 typedef enum  {

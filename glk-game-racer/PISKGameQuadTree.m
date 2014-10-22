@@ -73,6 +73,12 @@ const int PISKGameQuadTree_maxDeep = 20;
     }
 }
 
+- (void) removeAll {
+    [childs removeAllObjects];
+    for (int i=0; i<4; i++) {
+        [childsTree[i] removeAll];
+    }
+}
 
 - (id<PISKGamePositionable>) getOneForPoint:(CGPoint)point {
     id<PISKGamePositionable> object = nil;

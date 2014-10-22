@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "PISKGameQuadTree.h"
+#import "PISKGameCar.h"
+#import "PISKGameSegment.h"
 
 @interface PISKGame : NSObject
 

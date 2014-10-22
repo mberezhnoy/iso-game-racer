@@ -17,6 +17,7 @@
 - (instancetype) initWithRect:(CGRect)rect;
 - (void) insert:(id<PISKGamePositionable>)object;
 - (void) remove:(id<PISKGamePositionable>)object;
+- (void) removeAll;
 - (id<PISKGamePositionable>) getOneForPoint:(CGPoint)point;
 - (NSMutableSet*) getAllForPoint:(CGPoint)point;
 - (NSMutableSet*) getAllInRect:(CGRect)rect;
