@@ -6,10 +6,15 @@
 //  Copyright (c) 2014 Maxim Berezhnoy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "PISKGameQuadTree.h"
+#import "PISKGameSegment.h"
 
 @interface PISKMapCompiller : NSObject
 
+@property (readonly) NSDictionary *mapJson;
+@property (readonly) PISKGameQuadTree *ground;
+
 - (instancetype) initWithJson:(NSDictionary*)mapJson;
+- (void) compile;
 
 @end

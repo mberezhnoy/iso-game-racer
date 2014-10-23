@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
-@interface PISKViewController : UIViewController
+@interface PISKViewController : GLKViewController
+
+@property (strong, nonatomic) EAGLContext *context;
+@property (strong, nonatomic) GLKBaseEffect *effect;
+
+- (void)setUpGL;
+- (void)tearDownGL;
 
 @end

@@ -26,6 +26,7 @@
 		620B625019F1794D00D3322C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620B624E19F1794D00D3322C /* GLKit.framework */; };
 		620B625119F1794D00D3322C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620B624F19F1794D00D3322C /* OpenGLES.framework */; };
 		626E2B6D19F79042006FB619 /* PISKGameCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E2B6C19F79042006FB619 /* PISKGameCar.m */; };
+		626E2B7119F93DF2006FB619 /* PISKMCRoadFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E2B7019F93DF2006FB619 /* PISKMCRoadFragment.m */; };
 		62779E9019F56A2A00863231 /* PISK__QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 62779E8F19F56A2A00863231 /* PISK__QuadTree.m */; };
 		6292E5EB19F258FB0048BF2E /* PISKGameSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292E5EA19F258FB0048BF2E /* PISKGameSegment.m */; };
 		6292E5F219F265B30048BF2E /* PISKMapCompiller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292E5F119F265B30048BF2E /* PISKMapCompiller.m */; };
@@ -72,6 +73,8 @@
 		620B624F19F1794D00D3322C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		626E2B6B19F79042006FB619 /* PISKGameCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKGameCar.h; sourceTree = "<group>"; };
 		626E2B6C19F79042006FB619 /* PISKGameCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKGameCar.m; sourceTree = "<group>"; };
+		626E2B6F19F93DF2006FB619 /* PISKMCRoadFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKMCRoadFragment.h; sourceTree = "<group>"; };
+		626E2B7019F93DF2006FB619 /* PISKMCRoadFragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKMCRoadFragment.m; sourceTree = "<group>"; };
 		62779E8F19F56A2A00863231 /* PISK__QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISK__QuadTree.m; sourceTree = "<group>"; };
 		6292E5E919F258FB0048BF2E /* PISKGameSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISKGameSegment.h; sourceTree = "<group>"; };
 		6292E5EA19F258FB0048BF2E /* PISKGameSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISKGameSegment.m; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 				6292E5F119F265B30048BF2E /* PISKMapCompiller.m */,
 				6292E5F319F2B98C0048BF2E /* PISKMCGroundFragment.h */,
 				6292E5F419F2B98C0048BF2E /* PISKMCGroundFragment.m */,
+				626E2B6F19F93DF2006FB619 /* PISKMCRoadFragment.h */,
+				626E2B7019F93DF2006FB619 /* PISKMCRoadFragment.m */,
 			);
 			name = MapCompiller;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				620B624819F1559100D3322C /* PISKGame.m in Sources */,
 				620B624D19F176EE00D3322C /* PISKGameQuadTree.m in Sources */,
 				6292E5EB19F258FB0048BF2E /* PISKGameSegment.m in Sources */,
+				626E2B7119F93DF2006FB619 /* PISKMCRoadFragment.m in Sources */,
 				620B622419F0F24400D3322C /* PISKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

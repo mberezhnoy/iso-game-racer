@@ -8,6 +8,20 @@
 
 #import "PISKMapCompiller.h"
 
-@implementation PISKMapCompiller
+@implementation PISKMapCompiller {
+}
+
+@synthesize mapJson;
+@synthesize groundFragments;
+
+- (instancetype) initWithJson:(NSDictionary*)map {
+    self = [self init];
+    mapJson = map;
+    return self;
+}
+
+- (void) compile {
+    
+}
 
 @end
